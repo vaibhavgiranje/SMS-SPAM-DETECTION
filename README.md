@@ -1,53 +1,133 @@
-Your GitHub repository is created successfully, but only the README.md file got uploaded because the other project files were not added/committed before pushing.
+# SMS Spam Detection Project
 
-Do these steps in VS Code terminal:
+## 📌 Project Overview
 
-git status
+This project is an AI/ML-based SMS Spam Detection system that classifies messages as **Spam** or **Ham (Not Spam)** using Machine Learning and Natural Language Processing (NLP).
 
-This will show all untracked files.
+The application helps users identify unwanted spam messages automatically by analyzing the text content of SMS messages.
 
-Now add all project files:
+---
 
-git add .
+## 🚀 Features
 
-Then commit them:
+* Detects whether a message is Spam or Ham
+* User-friendly interface using Streamlit
+* Text preprocessing and cleaning
+* Machine Learning model for prediction
+* Real-time message classification
+* Easy to deploy and use
 
-git commit -m "Added all project files"
+---
 
-Now push again:
+## 🛠️ Technologies Used
 
-git push origin main
+* Python
+* Streamlit
+* Scikit-learn
+* Pandas
+* NumPy
+* NLTK
+* Pickle
 
-After this, refresh your GitHub repository page and all files should appear.
+---
 
-Your full workflow should look like this:
+## 📂 Project Structure
 
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin YOUR_GITHUB_LINK
-git push -u origin main
+```bash
+SMS_SPAM_PROJECT/
+│
+├── app.py
+├── model.pkl
+├── vectorizer.pkl
+├── requirements.txt
+├── README.md
+└── dataset/
+```
 
-From your screenshot, you only added:
+---
 
-git add README.md
+## ⚙️ Installation
 
-So only the README file was uploaded.
+### 1️⃣ Clone the Repository
 
-Also check:
+```bash
+git clone https://github.com/sakshibandal10-sketch/SMS_SPAM_PROJECT.git
+```
 
-Your project files are inside the SMS-Spam-Detection folder
+### 2️⃣ Navigate to Project Folder
 
-You are running commands in the correct folder
+```bash
+cd SMS_SPAM_PROJECT
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Run the Application
+
+```bash
+streamlit run app.py
+```
+
+After running the command, the application will open in your browser.
+
+---
+
+## 🧠 Machine Learning Workflow
+
+1. Data Collection
+2. Data Cleaning
+3. Text Preprocessing
+4. Feature Extraction using TF-IDF
+5. Model Training
+6. Prediction and Evaluation
+
+---
+
+## 📊 Model Used
+
+* Naive Bayes Classifier
+
+This model is commonly used for text classification tasks because of its high efficiency and accuracy.
+
+---
+
+## 📸 Output
+
+The application predicts:
+
+* **Spam Message**
+* **Not Spam Message**
+
+based on the SMS text entered by the user.
+
+---
+
+## 📈 Future Improvements
+
+* Add deep learning models
+* Improve accuracy with larger datasets
+* Deploy on cloud platforms
+* Add email spam detection
+* Create mobile-friendly UI
+
+---
+
+## 👩‍💻 Author
+
+Vaibhav Giranje
 
 
-You can verify by running:
+GitHub:
+https://github.com/vaibhavgiranje/SMS-SPAM-DETECTION/blob/main/README.md
 
-dir
+---
 
-or
+## ⭐ Conclusion
 
-ls
-
-If files are visible there, then git add . will upload everything.
+This project demonstrates the practical implementation of Machine Learning and NLP techniques for spam message detection. It is useful for beginners who want to learn text classification projects using Python and Streamlit.
