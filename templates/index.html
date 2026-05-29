@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SMS Spam Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>📩 SMS Spam Detector</h1>
+    <p>Check whether your message is Spam or Not</p>
+
+    <form method="POST">
+        <textarea name="message" placeholder="Enter your SMS here..."></textarea>
+        <button type="submit">Detect Message</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result {% if prediction == 'Spam' %}spam{% else %}ham{% endif %}">
+            Prediction: {{ prediction }}
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
